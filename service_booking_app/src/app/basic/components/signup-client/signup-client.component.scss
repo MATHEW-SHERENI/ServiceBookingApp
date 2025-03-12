@@ -1,0 +1,81 @@
+// Variables
+$primary-color: #1890ff;
+$background-color: #f5f5f5;
+$border-radius: 8px;
+$box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+.child{
+    padding: 50px;
+    position:absolute;
+    width: 380px;
+    background-color: #f5f5f5;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    margin-bottom: 22px;
+    box-shadow: 1px 1px 15px -7px rgba(0, 0, 0, 0.1);
+
+}
+nz-form-control{
+    min-width: 280px;
+}
+.login-form-margin{
+    margin-bottom: 16px;
+
+
+}
+.login-form-bottom{
+    width: 100%;
+}
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: $background-color;
+  padding: 20px;
+  
+  .signup-card {
+    background-color: white;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+    
+    nz-form-item {
+      margin-bottom: 20px;
+    }
+    
+    button[nz-button] {
+      height: 40px;
+      font-size: 16px;
+    }
+    
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+      
+      a {
+        color: $primary-color;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 576px) {
+  .signup-card {
+    padding: 25px;
+  }
+}
